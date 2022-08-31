@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+ <h1>Calculator</h1>
+ <form method="POST">
+   <input type="number" name="field1">
+   <input type="number" name="field2">
+   <br />
+   <br />
+   <input type="submit" name="add" value="Add">
+   <input type="submit" name="sub" value="Subtract">
+  </form> 
+  {% if val != "na" %}
+    <h3>The answer is {{val}}</h3>
+  {% endif %}
+</body>
+</html>
